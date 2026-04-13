@@ -21,7 +21,7 @@ io.on("connection", (socket) => {
         });
 
         io.emit("listaUsuarios", usuarios);
-    });2
+    })
 222
     socket.on("chat message", (dados) => {
 

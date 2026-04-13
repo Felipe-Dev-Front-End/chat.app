@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat App</title>
+  </head>
+
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- chatApp -->
+      <div class="chatApp">
+        <!-- usuários -->
+        <div class="usuarios">
+          <h3>Usuários</h3>
+          <ul id="listaUsuarios"></ul>
+        </div>
+        <!-- usuários -->
+
+        <!-- tela -->
+        <div class="tela">
+          <!-- telaDeConversa -->
+          <div class="telaDeConversa">
+            <p id="digitando" style="color: gray; height: 20px"></p>
+          </div>
+          <!-- telaDeConversa -->
+
+          <!-- inputs e btn -->
+          <div class="inputsBtn">
+            <input type="text" id="text" placeholder="Digite sua mensagem" />
+            <input type="button" value="Enviar" id="btnEnviar" />
+          </div>
+          <!-- inputs e btn -->
+        </div>
+        <!-- tela -->
+      </div>
+      <!-- chatApp -->
+
+      <!-- criado por  -->
+      <footer>
+        <h4>Desenvolvido por &copy; Felipe Alves Desenvolvedor front-end</h4>
+      </footer>
+      <!-- criado por  -->
+
+      <!-- popup requerindo nome de usuário -->
+      <div class="popupNome" id="popupNome">
+        <div class="popupBox">
+          <h2>Digite seu nome</h2>
+          <input type="text" id="nomeInput" placeholder="Seu nome" />
+          <button id="btnEntrar">Entrar</button>
+        </div>
+      </div>
+      <!-- popup requerindo nome de usuário -->
+    </div>
+    <!-- container -->
+
+    <audio
+      id="somMensagem"
+      src="https://www.soundjay.com/buttons/sounds/button-3.mp3"
+    ></audio>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

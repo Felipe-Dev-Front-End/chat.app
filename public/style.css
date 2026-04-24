@@ -1,203 +1,251 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* container */
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* container */
 
 /* chatApp" */
 .chatApp {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* chatApp" */
 
 /* usuarios */
 .usuarios {
-    width: 260px;
-    height: 100vh;
-    background-color: rgb(158, 250, 158);
-    text-align: center;
+  width: 260px;
+  height: 100vh;
+  background-color: rgb(158, 250, 158);
+  text-align: center;
+}
+
+.bx-chevron-right {
+  opacity: 0;
 }
 
 .usuarios h3 {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
-#listaUsuarios{
-    list-style:none;
-    padding:10px;
+#listaUsuarios {
+  list-style: none;
+  padding: 10px;
 }
 
-#listaUsuarios li{
-    padding:5px;
-    border-bottom:1px solid rgba(0,0,0,0.2);
-    text-align: left;
+#listaUsuarios li {
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  #usuarios {
+    width: 30px;
+    transition: 0.5s linear;
+  }
+
+  .usuarios h3 {
+    display: none;
+  }
+
+  #listaUsuarios {
+    display: none;
+  }
+
+  .change#usuarios {
+    width: 260px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-left: 2rem;
+    font-size: 12px;
+  }
+
+  .change#usuarios h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .change #listaUsuarios {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 3rem;
+  }
+
+  .bx-chevron-right {
+    font-size: 30px;
+    padding: 1rem 0;
+    cursor: pointer;
+    opacity: 1;
+  }
 }
 
 /* usuarios */
 
 /* tela */
 .tela {
-    width: 100%;
-    height:90vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* tela */
 
 /* telaDeConversa */
 .telaDeConversa {
-    width: 80%;
-    height: 75%;
-    background-color: aliceblue;
-    border: 2px solid gray;
-    border-radius: 5px;
-    
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    overflow-y: auto;
+  width: 80%;
+  height: 75%;
+  background-color: aliceblue;
+  border: 2px solid gray;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
 }
 
 /* telaDeConversa */
 
 /* inputsBtn */
-.inputsBtn{
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
+.inputsBtn {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
 }
 
-.inputsBtn input[type="text"]{
-    width: 74.4%;
+.inputsBtn input[type="text"] {
+  width: 74.4%;
 }
 
-.inputsBtn input[type="button"]{
-    background-color: green;
-    color: #fff;
-    cursor: pointer;
+.inputsBtn input[type="button"] {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
 }
 
-.inputsBtn input{
-    padding: 10px;
-    border-radius: 5px;
-   border: 1px solid gray;
+.inputsBtn input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 /* inputsBtn */
 
 /* responsivo */
-@media(max-width:768px) {
-    .inputsBtn input[type="text"]{
-        width: 70%;
-    }
+@media (max-width: 768px) {
+  .inputsBtn input[type="text"] {
+    width: 70%;
+  }
 
-    .telaDeConversa{
-        width: 300px;
-    }
+  .telaDeConversa {
+    width: 300px;
+  }
 }
 /* responsivo */
 
 /* class add mensagem envida */
-.mensagemEnviada{
-    background: #DCF8C6;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px 10px 0 10px;
-    max-width: 60%;
-    align-self: flex-end;
-    position: relative;
+.mensagemEnviada {
+  background: #dcf8c6;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px 10px 0 10px;
+  max-width: 60%;
+  align-self: flex-end;
+  position: relative;
 }
 
-.mensagemRecebida{
-    background: #fff;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px 10px 10px 0;
-    max-width: 60%;
-    align-self: flex-start;
-    position: relative;
+.mensagemRecebida {
+  background: #fff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px 10px 10px 0;
+  max-width: 60%;
+  align-self: flex-start;
+  position: relative;
 }
 /* class add mensagem recebida */
 
 /* footer */
-footer{
-    background-color: rgba(0,0,0,0.9);
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    bottom: 0;
-    padding: 10px;
-    color: #fff;
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  bottom: 0;
+  padding: 10px;
+  color: #fff;
 }
 
-footer h4{
-    letter-spacing: 2px;
+footer p {
+  letter-spacing: 2px;
 }
 /* footer */
 
 /* css poppup */
-.popupNome{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.popupNome {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.popupBox{
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
+.popupBox {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.popupBox input{
-    padding:10px;
-    margin-top:10px;
-    width:200px;
+.popupBox input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 200px;
 }
 
-.popupBox button{
-    margin-top:10px;
-    padding:10px;
-    width:100%;
-    background: green;
-    color:white;
-    border:none;
-    cursor:pointer;
+.popupBox button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 /* css poppup */

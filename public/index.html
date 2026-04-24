@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Chat App</title>
   </head>
@@ -14,8 +18,9 @@
       <!-- chatApp -->
       <div class="chatApp">
         <!-- usuários -->
-        <div class="usuarios">
+        <div class="usuarios" id="usuarios">
           <h3>Usuários</h3>
+          <i class="bx bx-chevron-right" onclick="openList()"></i>
           <ul id="listaUsuarios"></ul>
         </div>
         <!-- usuários -->
@@ -41,7 +46,7 @@
 
       <!-- criado por  -->
       <footer>
-        <h4>Desenvolvido por &copy; Felipe Alves Desenvolvedor front-end</h4>
+        <p>Desenvolvido por &copy; Felipe Alves Desenvolvedor front-end</p>
       </footer>
       <!-- criado por  -->
 

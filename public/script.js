@@ -65,7 +65,7 @@ socket.on("chat message", (dados) => {
     msg.classList.add("mensagemRecebida");
   }
 
- msg.innerHTML = `
+  msg.innerHTML = `
     <div style="font-size:14px">
         <strong>${dados.nome}</strong><br>
         ${dados.texto}
@@ -117,3 +117,10 @@ socket.on("digitando", (nome) => {
     digitandoEl.textContent = "";
   }, 1000);
 });
+
+// função abrir lista de usuarios
+function openList() {
+document.getElementById("usuarios").classList.toggle("change");
+  
+}
+// função abrir lista de usuarios
